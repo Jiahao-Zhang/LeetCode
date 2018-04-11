@@ -1,6 +1,6 @@
 package pers.jiahao.leetcode.array;
 
-public class ReshapeTheMatrix {
+public class NO566ReshapeTheMatrix {
 	public int[][] matrixReshape(int[][] nums, int r, int c) {
         if(nums.length*nums[0].length!=r*c){
             return nums;

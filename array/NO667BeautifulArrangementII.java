@@ -1,6 +1,6 @@
 package pers.jiahao.leetcode.array;
 
-public class BeautifulArrangementII {
+public class NO667BeautifulArrangementII {
 	 public int[] constructArray(int n, int k) {
 	        int[] result = new int[n];
 	        int index = 0;

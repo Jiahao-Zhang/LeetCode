@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author jiahaozhang
  *
  */
-public class ArrayPartitionI {
+public class NO561ArrayPartitionI {
 	 public int arrayPairSum(int[] nums) {
 	        int result = 0;
 	        Arrays.sort(nums);

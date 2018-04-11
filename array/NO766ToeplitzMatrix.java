@@ -1,6 +1,6 @@
 package pers.jiahao.leetcode.array;
 
-public class ToeplitzMatrix {
+public class NO766ToeplitzMatrix {
 	 public boolean isToeplitzMatrix(int[][] matrix) {
 	        boolean result = true;
 	        for(int i = 0;i<matrix.length-1;i++){

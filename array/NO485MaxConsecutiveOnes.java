@@ -1,6 +1,6 @@
 package pers.jiahao.leetcode.array;
 
-public class MaxConsecutiveOnes {
+public class NO485MaxConsecutiveOnes {
 	 public int findMaxConsecutiveOnes(int[] nums) {
 	        int result = 0;
 	        int max = 0;
