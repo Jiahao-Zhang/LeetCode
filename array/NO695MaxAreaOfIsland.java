@@ -1,6 +1,6 @@
 package pers.jiahao.leetcode.array;
 
-public class N0695MaxAreaOfIsland {
+public class NO695MaxAreaOfIsland {
 	public int maxAreaOfIsland(int[][] grid) {
         int max = 0;
         for(int i = 0;i<grid.length;i++){
