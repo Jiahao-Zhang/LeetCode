@@ -1,9 +1,25 @@
 package pers.jiahao.leetcode.tree;
-/** 
-* @author Jiahao Zhang
-* @version ：May 10, 2018 11:06:33 PM 
-* 类说明 
-*/
+
 public class NO100SameTree {
+	  public boolean isSameTree(TreeNode p, TreeNode q) {
+	        return dfs(p,q);
+	    }
+	    private boolean dfs(TreeNode p, TreeNode q){
+	        if(p==null&&q==null){
+	            return true;
+	        }else if(p==null&&q!=null){
+	            return false;
+	        }else if(p!=null&&q==null){
+	            return false;
+	        }else{
+	            if(p.val==q.val){
+	                return dfs(p.left,q.left)&&dfs(p.right,q.right);
+	            }else{
+	                return false;
+	            }
+	        }
+	        
+	        
+	    }
 
 }
