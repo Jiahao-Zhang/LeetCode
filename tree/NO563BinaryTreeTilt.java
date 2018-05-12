@@ -1,9 +1,21 @@
 package pers.jiahao.leetcode.tree;
-/** 
-* @author Jiahao Zhang
-* @version ：May 11, 2018 11:29:19 PM 
-* 类说明 
-*/
+
 public class NO563BinaryTreeTilt {
+	 int result =0;
+	    public int findTilt(TreeNode root) {
+	        dfs(root);
+	        return result;
+	        
+	    }
+	    public int dfs(TreeNode root){
+	        if(root==null){
+	            return 0;
+	        }
+	        int left = dfs(root.left);
+	        int right = dfs(root.right);
+	        result+=Math.abs(left-right);
+	        return left+right+root.val;
+	      
+	    }
 
 }
