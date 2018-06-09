@@ -1,9 +1,18 @@
 package pers.jiahao.leetcode.math;
-/** 
-* @author Jiahao Zhang
-* @version ：Jun 8, 2018 11:11:56 PM 
-* 类说明 
-*/
+
 public class NO326PowerofThree {
+	public boolean isPowerOfThree(int n) {
+        if(n==0){
+            return false;
+        }
+        while(n!=1){
+            if(n%3!=0){
+                return false;
+            }
+            n = n/3;
+        }
+        return true;
+        
+    }
 
 }
