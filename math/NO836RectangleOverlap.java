@@ -1,9 +1,9 @@
 package pers.jiahao.leetcode.math;
-/** 
-* @author Jiahao Zhang
-* @version ：Jun 9, 2018 10:23:26 PM 
-* 类说明 
-*/
+
 public class NO836RectangleOverlap {
+	public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
+        return Math.min(rec1[2],rec2[2])>Math.max(rec1[0],rec2[0])&&Math.min(rec1[3],rec2[3])>Math.max(rec1[1],rec2[1]);
+        
+    }
 
 }
