@@ -1,9 +1,15 @@
 package pers.jiahao.leetcode.math;
-/** 
-* @author Jiahao Zhang
-* @version ：Jun 15, 2018 10:42:12 PM 
-* 类说明 
-*/
+
 public class NO775GlobalandLocalInversions {
+	 public boolean isIdealPermutation(int[] A) {
+	        int max = Integer.MIN_VALUE;
+	       for(int i = 0;i<A.length-2;i++){
+	           max = Math.max(max,A[i]);
+	           if(max>A[i+2]){
+	               return false;
+	           }
+	       }
+	        return true;
+	    }
 
 }
