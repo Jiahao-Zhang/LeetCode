@@ -1,5 +1,6 @@
 package pers.jiahao.leetcode.array;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class NO506RelativeRanks {
@@ -29,7 +30,7 @@ public class NO506RelativeRanks {
             result[map.get(nums[i])] = String.valueOf(nums.length-i);
         }
         return result;
-        
+ 
     }
 
 }
