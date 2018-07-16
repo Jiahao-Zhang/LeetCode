@@ -1,9 +1,17 @@
 package pers.jiahao.leetcode.array;
-/** 
-* @author Jiahao Zhang
-* @version ：Jul 12, 2018 11:53:29 PM 
-* 类说明 
-*/
+
 public class NO709ToLowerCase {
+	public String toLowerCase(String str) {
+        int num = 'A'-'a';
+        StringBuffer buffer = new StringBuffer();
+        for(char c:str.toCharArray()){
+            if(c>='A'&&c<='Z'){
+                c = (char)(c-num);
+            }
+            buffer.append(c);
+        }
+        return buffer.toString();
+        
+    }
 
 }
